@@ -1,22 +1,22 @@
-Обробка виняткових ситуацій в Java
-Мета:
+## Обробка виняткових ситуацій в Java
+### Мета:
 Зрозуміти базові принципи обробки виняткових ситуацій в Java.
 Створити спеціалізовані класи винятків для обробки конкретних помилкових сценаріїв.
 Використовувати пропагацію винятків.
-Опис:
+### Опис:
 У цій лабораторній роботі вам потрібно реалізувати надійну і стійку до помилок програму, яка імітує спрощену банківську систему. Ця система буде включати створення рахунків, фінансові операції і функції зведення рахунків. Ваше завдання полягає в тому, щоб переконатися, що програма може елегантно обробляти різні типи помилок, не ламаючись. Реалізуйте спеціалізовані класи винятків для обробки спеціалізованих сценаріїв помилок.
 
-Етапи:
-Реалізуйте клас BankAccount з членами класу accountNumber, accountName і balance.
-Реалізуйте методи deposit(double amount), withdraw(double amount), getBalance() та getAccountSummary().
-Створіть спеціалізовані класи винятків:
-InsufficientFundsException
-NegativeAmountException
-AccountNotFoundException
-Реалізуйте клас Bank, який зберігає колекцію об'єктів BankAccount.
-У класі Bank, реалізуйте методи:
-createAccount(String accountName, double initialDeposit)
-findAccount(int accountNumber)
-transferMoney(int fromAccountNumber, int toAccountNumber, double amount)
-Обробляйте винятки відповідно в кожному методі.
-Створіть тестові класи, де ви моделюєте різні сценарії для тестування обробки виняткових ситуацій.
+### Етапи:
+1. Реалізуйте клас BankAccount з членами класу accountNumber, accountName і balance.
+2. Реалізуйте методи deposit(double amount), withdraw(double amount), getBalance() та getAccountSummary().
+3. Створіть спеціалізовані класи винятків:
+    * InsufficientFundsException
+    * NegativeAmountException
+    * AccountNotFoundException
+4. Реалізуйте клас Bank, який зберігає колекцію об'єктів BankAccount.
+5. У класі Bank, реалізуйте методи:
+    * createAccount(String accountName, double initialDeposit)
+    * findAccount(int accountNumber)
+    * transferMoney(int fromAccountNumber, int toAccountNumber, double amount)
+6. Обробляйте винятки відповідно в кожному методі.
+7. Створіть тестові класи, де ви моделюєте різні сценарії для тестування обробки виняткових ситуацій.
